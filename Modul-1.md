@@ -11,7 +11,7 @@ Modul ini mencakup proses instalasi dari seluruh komponen yang diperlukan untuk 
   ```bash
   sudo apt install git
   ```
-# Instalasi sraRAN
+# Instalasi srsRAN
 Sebelum melakukan penginstalan srsRAN, jalankan kode berikut untuk menginstal depencencies
   ```bash
   sudo apt-get install build-essential cmake libfftw3-dev libmbedtls-dev libboost-program-options-dev libconfig++-dev libsctp-dev
@@ -57,6 +57,7 @@ Instalasi czmq
   sudo ldconfig
   ```
 Jangan lupa untuk kembali ke folder /home/praktikum5g agar file yang di clone akan tersimpan pada folder home/user
+## Instalasi srsRAN_4G
 Selanjutnya, akan dilakukan instalasi srsRAN_4G dengan command berikut
   ```bash
   git clone https://github.com/srsRAN/srsRAN_4G.git
