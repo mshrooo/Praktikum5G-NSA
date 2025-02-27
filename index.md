@@ -1,6 +1,8 @@
 ---
 layout: default
-title: Student Materials
+title: Praktikum5G-NSA
 ---
 
-{% include_relative README.md %}
+# Welcome to Praktikum5G-NSA!
+
+Your content goes here.
