@@ -8,7 +8,7 @@ Modul ini mencakup proses instalasi dari seluruh komponen yang diperlukan untuk 
 ## Instalasi srsRAN
 Sebelum melakukan penginstalan srsRAN, jalankan kode berikut untuk menginstal depencencies
 ```bash
-sudo apt install git libtool
+sudo apt install git libtool curl
 ```
 ```bash
 sudo apt-get install build-essential cmake libfftw3-dev libmbedtls-dev libboost-program-options-dev libconfig++-dev libsctp-dev
@@ -20,7 +20,7 @@ Di Ubuntu, library ZMQ dapat diinstal menggunakan command berikut
 ```bash
 sudo apt-get install libzmq3-dev
 ```
-Instalasi dari source juga dapat dilakukan menggunakan cara berikut
+Instalasi dari source juga dapat dilakukan menggunakan cara berikut, namun **kurang disarankan**
 Instalasi libzmq
 ```bash
 git clone https://github.com/zeromq/libzmq.git
