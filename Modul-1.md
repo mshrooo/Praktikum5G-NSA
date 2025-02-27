@@ -54,6 +54,24 @@ sudo make install
 sudo ldconfig
 ```
 Jangan lupa untuk kembali ke folder /home/praktikum5g agar file yang di clone akan tersimpan pada folder home/user
+**Sebelum install srsRAN, perlu juga install driver BladeRF yang bakal dipake di mobul 3 biar langsung di recognize sama srsRAN nya**
+### Instalasi Driver BladeRF
+Di Ubuntu, proses instalasi dapat dilakukan dengan menggunakan Personal Package Archives sebagai berikut
+```bash
+sudo add-apt-repository ppa:nuandllc/bladerf
+sudo apt-get update
+sudo apt-get install bladerf
+```
+Driver BladeRF sudah terinstal, namun jangan lupa untuk install firmware dan image FPGA yang dapat dilakukan menggunakan command berikut
+```bash
+sudo apt-get install bladerf-firmware-fx3     # firmware untuk semua model bladeRF
+sudo apt-get install bladerf-fpga-hostedx40   # FPGA image untuk bladeRF x40
+sudo apt-get install bladerf-fpga-hostedx115  # FPGA image untuk bladeRF x115
+sudo apt-get install bladerf-fpga-hostedxa4   # FPGA image untuk bladeRF 2.0 Micro A4
+sudo apt-get install bladerf-fpga-hostedxa9   # FPGA image untuk bladeRF 2.0 Micro A9
+```
+**Masing-masing jenis bladeRF dapat dilihat pada bagian FPGA dengan contoh sebagai berikut**
+![BladeRF x115](/images/x115.jpg)
 ### Instalasi srsRAN_4G
 Selanjutnya, akan dilakukan instalasi srsRAN_4G dengan command berikut
 ```bash
@@ -101,7 +119,7 @@ sudo systemctl start mongod # lakukan bila mongod belum jalan
 sudo systemctl enable mongod # untuk memastikan MongoDB berjalan setiap booting
 ```
 ### Instalasi Open5GS
-Pada Ubuntu, proses instalasi dapat dilakukan dengan menggunakan Personal Package Archives sebagai berikut
+Di Ubuntu, proses instalasi dapat dilakukan dengan menggunakan Personal Package Archives sebagai berikut
 ```bash
 sudo add-apt-repository ppa:open5gs/latest
 sudo apt update
@@ -130,6 +148,5 @@ Terakhir, GUI Open5GS dapat diinstal menggunakan command berikut pada sistem Ubu
 ```bash
 curl -fsSL https://open5gs.org/open5gs/assets/webui/install | sudo -E bash -
 ```
-
-Selesai deh modul 1, tinggal lanjut ke modul 2 untuk tahap konfigurasinya yah :D
-## SEMANGAT!!!
+### Selesai deh modul 1, tinggal lanjut ke modul 2 untuk tahap konfigurasinya yah :D
+### SEMANGAT!!!
