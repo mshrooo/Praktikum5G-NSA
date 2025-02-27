@@ -71,7 +71,7 @@ sudo apt-get install bladerf-fpga-hostedxa4   # FPGA image untuk bladeRF 2.0 Mic
 sudo apt-get install bladerf-fpga-hostedxa9   # FPGA image untuk bladeRF 2.0 Micro A9
 ```
 **Masing-masing jenis bladeRF dapat dilihat pada bagian FPGA dengan contoh sebagai berikut**
-![BladeRF x115](/images/x115.jpg)
+![BladeRF x115](/images/x115.png)
 ### Instalasi srsRAN_4G
 Selanjutnya, akan dilakukan instalasi srsRAN_4G dengan command berikut
 ```bash
