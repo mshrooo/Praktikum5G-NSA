@@ -18,7 +18,7 @@ Instalasi RF Driver ZeroMQ perlu dijalankan di awal agar proses building dari sr
 
 Di Ubuntu, library ZMQ dapat diinstal menggunakan command berikut
   ```bash
-  sudo apt-get install libzmq1-dev
+  sudo apt-get install libzmq3-dev
   ```
 Instalasi dari source juga dapat dilakukan menggunakan cara berikut
 Instalasi libzmq
