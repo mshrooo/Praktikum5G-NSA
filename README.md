@@ -1,14 +1,14 @@
 ---
 layout: home
-title: Just the Class
+title: Praktikum 5G NSA
 nav_exclude: true
 permalink: /:path/
 seo:
   type: Course
-  name: Just the Class
+  name: Praktikum 5G NSA
 ---
 
-# Just the Class
+# Praktikum 5G NSA
 
 Just the Class is a GitHub Pages template developed for the purpose of quickly deploying course websites. In addition to serving plain web pages and files, it provides a boilerplate for:
 
