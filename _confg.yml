@@ -1,3 +1,4 @@
+include: ["README.md"]
 title: Student Materials
 description: Resources and learning materials for students
 theme: jekyll-theme-minimal
