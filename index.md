@@ -3,7 +3,8 @@ layout: default
 title: Praktikum5G-NSA
 ---
 
-# Welcome to Praktikum5G-NSA!
+# Selamat datang di Modul Praktikum 5G-NSA!
+By: Steven Nathanael Wijaya - 18120009
 
 # Project Title
 
