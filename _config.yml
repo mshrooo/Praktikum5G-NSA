@@ -1,7 +1,7 @@
-title: Just the Class
-tagline: A Jekyll template for course websites
-description: A modern, highly customizable, responsive Jekyll template for course websites
-author: Kevin Lin
+title: Praktikum 5G NSA
+tagline: tagline
+description: desc
+author: Steven Nathanael Wijaya
 baseurl: '/Praktikum5G-NSA' # the subpath of your site, e.g. /blog
 url: 'https://github.com/mshrooo' # the base hostname & protocol for your site, e.g. http://example.com
 exclude: ["Gemfile", "Gemfile.lock", "LICENSE"]
@@ -13,9 +13,9 @@ search_enabled: true
 heading_anchors: true
 permalink: pretty
 aux_links:
-  Kevin Lin:
+  link1:
     - 'https://kevinl.info'
-  Just the Class on GitHub:
+  link2:
     - 'https://github.com/kevinlin1/just-the-class'
 footer_content:
 
