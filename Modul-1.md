@@ -53,7 +53,7 @@ make
 sudo make install
 sudo ldconfig
 ```
-Jangan lupa untuk kembali ke folder /home/praktikum5g agar file yang di clone akan tersimpan pada folder home/user
+Jangan lupa untuk kembali ke folder /home/praktikum5g agar file yang di clone akan tersimpan pada folder home/user. \n
 **Sebelum install srsRAN, proses install driver BladeRF perlu dilakukan agar bisa di recognize sama srsRAN nya**
 **hal ini tidak diperlukan pada praktikum ini karena penggunaan SDR tidak akan dilakukan pada VM pada modul 1 dan 2**
 ### Instalasi Driver BladeRF
@@ -94,7 +94,7 @@ Bila ditemukan, lanjutkan proses instalasi ke tahap berikut
 make
 make test
 ```
-**apabila ada hasil yang gagal/error pada proses make test, ulangi proses dengan menggunakan command berikut**
+**Apabila ada hasil yang gagal/error pada proses make test, ulangi proses dengan menggunakan command berikut**
 ```bash
 ctest --rerun-failed
 ```
