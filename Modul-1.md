@@ -8,7 +8,7 @@ Modul ini mencakup proses instalasi dari seluruh komponen yang diperlukan untuk 
 ## Instalasi srsRAN
 Sebelum melakukan penginstalan srsRAN, jalankan kode berikut untuk menginstal depencencies
 ```bash
-sudo apt install git libtool curl
+sudo apt install git libtool curl gnupg ca-certificates
 ```
 ```bash
 sudo apt-get install build-essential cmake libfftw3-dev libmbedtls-dev libboost-program-options-dev libconfig++-dev libsctp-dev
@@ -54,7 +54,8 @@ sudo make install
 sudo ldconfig
 ```
 Jangan lupa untuk kembali ke folder /home/praktikum5g agar file yang di clone akan tersimpan pada folder home/user
-**Sebelum install srsRAN, perlu juga install driver BladeRF yang bakal dipake di mobul 3 biar langsung di recognize sama srsRAN nya**
+**Sebelum install srsRAN, proses install driver BladeRF perlu dilakukan agar bisa di recognize sama srsRAN nya**
+**hal ini tidak diperlukan pada praktikum ini karena penggunaan SDR tidak akan dilakukan pada VM pada modul 1 dan 2**
 ### Instalasi Driver BladeRF
 Di Ubuntu, proses instalasi dapat dilakukan dengan menggunakan Personal Package Archives sebagai berikut
 ```bash
@@ -92,6 +93,13 @@ Bila ditemukan, lanjutkan proses instalasi ke tahap berikut
 ```bash
 make
 make test
+```
+**apabila ada hasil yang gagal/error pada proses make test, ulangi proses dengan menggunakan command berikut**
+```bash
+ctest --rerun-failed
+```
+bila sudah berhasil, bisa dilanjutkan menggunakan command berikut
+```bash
 sudo make install
 sudo su
 srsran_install_configs.sh user # untuk menginstall file konfigurasi pada /root/.config/srsran/
@@ -103,7 +111,6 @@ Sebelum menginstal Open5GS, akan dilakukan penginstalan MongoDB terlebih dahulu 
 Pertama, akan dilakukan pengambilan GPG key untuk menginstal MongoDB
 ```bash
 sudo apt update
-sudo apt install gnupg
 curl -fsSL https://pgp.mongodb.com/server-6.0.asc | sudo gpg -o /usr/share/keyrings/mongodb-server-6.0.gpg --dearmor
 ```
 Selanjutnya akan dibuat file list /etc/apt/sources.list.d/mongodb-org-6.0.list untuk versi Ubuntu yang digunakan. VM yang digunakan ialah Ubuntu 22.04, sehingga command yang digunakan adalah sebagai berikut.
@@ -130,7 +137,6 @@ Untuk GUI Open5GS, diperlukan penginstalan node.js terlebih dahulu yang dapat di
 Berikut command untuk mengambil GPG key
 ```bash
 sudo apt update
-sudo apt install -y ca-certificates curl gnupg
 sudo mkdir -p /etc/apt/keyrings
 curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg
 ```
